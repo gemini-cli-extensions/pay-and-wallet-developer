@@ -1,0 +1,18 @@
+{
+  "name": "pay-and-wallet-developer",
+  "version": "1.0.0",
+  "description": "Access your Google Pay and Google Wallet developer data, search official documentation, and manage your integrations.",
+  "mcpServers": {
+    "pay-and-wallet-developer": {
+      "httpUrl": "https://paydeveloper.googleapis.com/mcp",
+      "authProviderType": "google_credentials",
+      "oauth": {
+        "scopes": [
+          "https://www.googleapis.com/auth/paydeveloper.merchant",
+          "https://www.googleapis.com/auth/paydeveloper.issuer.readonly"
+        ]
+      },
+      "timeout": 30000
+    }
+  }
+}
