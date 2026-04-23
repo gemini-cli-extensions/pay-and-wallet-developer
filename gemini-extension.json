@@ -18,7 +18,7 @@
   ],
   "mcpServers": {
     "pay-wallet-dev-mcp-server": {
-      "httpUrl": "https://staging-paydeveloper.sandbox.googleapis.com/mcp",
+      "httpUrl": "https://paydeveloper.googleapis.com/mcp",
       "oauth": {
         "enabled": true,
         "clientId": "${GCP_CLIENT_ID}",
