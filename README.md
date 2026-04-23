@@ -40,15 +40,9 @@ control.
 
 ## Configure authentication
 
-This extension uses Google Application Default Credentials (ADC) to perform
-authentication. To login with ADC, run the following command in your terminal:
+Follow the instructions in the Pay and Wallet Developer MCP server [user guide](https://developers.google.com/pay/api/web/guides/use-pay-wallet-mcp#oauth-client-setup) to create a `clientId` and `clientSecret` for Gemini CLI.
 
-```bash
-gcloud auth application-default login
-```
-
-For additional details, see the
-[ADC documentation](https://docs.cloud.google.com/docs/authentication/application-default-credentials#personal).
+During the installation of the extension, you will be prompted to type in your `clientId` and `clientSecret`.
 
 ## Available tools
 
@@ -86,6 +80,7 @@ tools.
 
 ## Reference and resources
 
+*   Check the Google Pay and Wallet Developer MCP Server [user guide](https://developers.google.com/pay/api/web/guides/use-pay-wallet-mcp#oauth-client-setup)
 *   Explore the
     [Google Pay Developer remote MCP reference documentation](https://developers.google.com/pay/api/web/reference/mcp)
     and
