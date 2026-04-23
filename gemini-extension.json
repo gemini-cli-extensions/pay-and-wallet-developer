@@ -2,17 +2,33 @@
   "name": "pay-and-wallet-developer",
   "version": "1.0.0",
   "description": "Access your Google Pay and Google Wallet developer data, search official documentation, and manage your integrations.",
+  "settings": [
+    {
+      "name": "clientId",
+      "description": "👤 Your GCP clientId for authentication.",
+      "envVar": "GCP_CLIENT_ID",
+      "sensitive": false
+    },
+    {
+      "name": "clientSecret",
+      "description": "🔒 Your GCP clientSecret for authentication.",
+      "envVar": "GCP_CLIENT_SECRET",
+      "sensitive": true
+    }
+  ],
   "mcpServers": {
-    "pay-and-wallet-developer": {
-      "httpUrl": "https://paydeveloper.googleapis.com/mcp",
-      "authProviderType": "google_credentials",
+    "pay-wallet-dev-mcp-server": {
+      "httpUrl": "https://staging-paydeveloper.sandbox.googleapis.com/mcp",
       "oauth": {
+        "enabled": true,
+        "clientId": "${GCP_CLIENT_ID}",
+        "clientSecret": "${GCP_CLIENT_SECRET}",
         "scopes": [
-          "https://www.googleapis.com/auth/paydeveloper.merchant",
+	        "https://www.googleapis.com/auth/paydeveloper.merchant",
           "https://www.googleapis.com/auth/paydeveloper.issuer.readonly"
         ]
       },
-      "timeout": 30000
+      "authProviderType": "dynamic_discovery"
     }
   }
 }
