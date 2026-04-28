@@ -7,7 +7,7 @@
       "name": "clientId",
       "description": "👤 Your GCP clientId for authentication.",
       "envVar": "GCP_CLIENT_ID",
-      "sensitive": false
+      "sensitive": true
     },
     {
       "name": "clientSecret",
